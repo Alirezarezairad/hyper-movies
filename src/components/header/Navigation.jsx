@@ -2,9 +2,12 @@ import React from 'react'
 
 export default function Navigation() {
   return (
-    <nav className='container flex mt-10 items-center text-slate-300'>
+    <nav className=' flex  items-center text-slate-300'>
        <div className='flex items-center'>
-        <h1 className='text-3xl mr-12'>HyperMovies</h1>
+        <h1 className='text-3xl mr-12'>
+          Hyper<span className='text-rose-500'>Movies</span>
+          <p className='text-xs text-center text-slate-500 font-light'>Film Review</p>
+          </h1>
         <ul className='flex gap-6 uppercase'>
             <li><a href="#">Movies</a></li>
             <li><a href="#">TV Shows</a></li>
@@ -15,7 +18,7 @@ export default function Navigation() {
        <div className='ml-auto '>
         <ul className='flex gap-8 uppercase'>
             <li><a href="#">Login</a></li>
-            <li><a className='bg-rose-700 px-6 py-3 rounded-2xl text-white' href="#">Sign up</a></li>
+            <li><a className='bg-rose-700 hover:bg-rose-500 px-6 py-3 rounded-2xl text-white' href="#">Sign up</a></li>
         </ul>
        </div>
     </nav>
