@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navigation() {
   return (
-    <nav className=' flex  items-center text-slate-300'>
+    <nav className='hidden  md:flex  items-center text-slate-300'>
        <div className='flex items-center'>
         <h1 className='text-3xl mr-12'>
           Hyper<span className='text-rose-500'>Movies</span>
