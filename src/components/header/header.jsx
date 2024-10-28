@@ -11,16 +11,14 @@ export default function Header() {
 
 
   return (
-    <header className="py-12 transition-all duration-500 bg-cover bg-center" 
-            style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 40%)), url('${bg}')` }}>
+    <header className=" transition-all duration-500 bg-cover bg-center pb-8 md:py-8" 
+            style={{ backgroundImage: `linear-gradient(rgb(30 41 59 / 100%),rgb(30 41 59 / 40%), rgb(30 41 59 /20%)), url('${bg}')` }}>
+      
+      <Navigation />
       <div className="container">
-        <Navigation />
         <SerchBox />
         <FollowUs />
         <HeaderSlider setBg={setBg} defaultBg={defaultBg} /> 
-
-
-
       </div>
     </header>
   );

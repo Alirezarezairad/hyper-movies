@@ -9,7 +9,22 @@ function getImage(number){
 export default function HeaderSlider({ setBg, defaultBg }) {
   return (
     <div className='mt-8'>
-      <Swiper modules={[Autoplay]} spaceBetween={20} slidesPerView={4} autoplay={{delay:3000}} loop>
+      <Swiper 
+      breakpoints={{
+        640: {
+          slidesPerView:2,
+          spaceBetween:20,
+        },
+        768: {
+          slidesPerView:3,
+          spaceBetween:30,
+        },
+        1024: {
+          slidesPerView:4,
+          spaceBetween:40,
+        },
+      }}
+      modules={[Autoplay]}  autoplay={{delay:3000}} loop>
       {[1, 2, 3, 4, 1, 2, 3, 4].map((number, index) => (
           <SwiperSlide key={`${number}-${index}`}> 
             <img 
