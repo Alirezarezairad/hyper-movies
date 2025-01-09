@@ -31,7 +31,7 @@ export default function HeaderSlider({ setBg, defaultBg }) {
           <SwiperSlide key={`${number}-${index}`}> 
                  <div onMouseOver={() => setBg(getImage(number))}
                 onMouseLeave={() => setBg(defaultBg)} >
-            <MovieCard img={`public/slider${number}.jpg`} />
+            <MovieCard img={`./public/slider${number}.jpg`} />
             </div>
           </SwiperSlide>
         ))}
