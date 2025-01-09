@@ -31,13 +31,12 @@ export default function HeaderSlider({ setBg, defaultBg }) {
           <SwiperSlide key={`${number}-${index}`}> 
                  <div onMouseOver={() => setBg(getImage(number))}
                 onMouseLeave={() => setBg(defaultBg)} >
-            <MovieCard img={`http://busterhtml.mbkip3ms9u-e92498n216kr.p.temp-site.link/images/uploads/slider${number}.jpg`} />
+            <MovieCard img={`https://media.themoviedb.org/t/p/w220_and_h330_face/6QXcWnq8Ln0uypX9y1e3r1wEpF.jpg`} />
             </div>
           </SwiperSlide>
 
         ))}
       </Swiper>
-      <><img src="http://busterhtml.mbkip3ms9u-e92498n216kr.p.temp-site.link/images/uploads/slider1.jpg" alt="" /></>
     </div>
   );
 }
