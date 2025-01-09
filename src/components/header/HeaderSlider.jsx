@@ -34,8 +34,10 @@ export default function HeaderSlider({ setBg, defaultBg }) {
             <MovieCard img={`http://busterhtml.mbkip3ms9u-e92498n216kr.p.temp-site.link/images/uploads/slider${number}.jpg`} />
             </div>
           </SwiperSlide>
+
         ))}
       </Swiper>
+      <><img src="http://busterhtml.mbkip3ms9u-e92498n216kr.p.temp-site.link/images/uploads/slider1.jpg" alt="" /></>
     </div>
   );
 }
