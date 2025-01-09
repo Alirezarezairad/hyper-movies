@@ -34,3 +34,5 @@ export default function MovieListSlider({ movies }) {
         </Swiper>
     );
 }
+// {/* <div onMouseOver={() => setBg(getImage(number))}
+//                 onMouseLeave={() => setBg(defaultBg)} ></div> */}

@@ -31,10 +31,10 @@ export default function HeaderSlider({ setBg, defaultBg }) {
           <SwiperSlide key={`${number}-${index}`}> 
                  <div onMouseOver={() => setBg(getImage(number))}
                 onMouseLeave={() => setBg(defaultBg)} >
-            <MovieCard img={`https://media.themoviedb.org/t/p/w220_and_h330_face/6QXcWnq8Ln0uypX9y1e3r1wEpF.jpg`} />
+            <MovieCard img={`dist/slider${number}.jpg`} />
             </div>
           </SwiperSlide>
-
+          
         ))}
       </Swiper>
     </div>
